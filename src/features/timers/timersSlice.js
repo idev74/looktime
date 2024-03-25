@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import Timer from './Timer';
+import makeTimer from './Timer';
 
 const initialState = {
     value: []
@@ -10,7 +10,7 @@ export const timersSlice = createSlice({
     initialState,
     reducers: {
         addTimer: (state, action) => {
-            state.value.push(new Timer(action.payload))
+            state.value.push(makeTimer(action.payload))
         },
 
         toggleTimer: (state, action) => {
@@ -20,7 +20,6 @@ export const timersSlice = createSlice({
         update: (state, action) => {
             state.value.map(timer => {
                 if (timer.isRunning) {
-                    // timer.time += action.payload
                     const time = timer.time += action.payload
                     const newTimer = { ...timer, time }
                     return newTimer

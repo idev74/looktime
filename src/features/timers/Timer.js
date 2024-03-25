@@ -1,7 +1,9 @@
-export default class Timer {
-  constructor(name) {
-    this.name = name
-    this.time = 0
-    this.isRunning = false
+const makeTimer = (name) => {
+  return {
+    name,
+    time: 0, 
+    isRunning: false
   }
-}
+} 
+
+export default makeTimer
