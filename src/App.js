@@ -6,6 +6,7 @@ import ListTimers from './components/ListTimers';
 export default function App() {
     return (
         <div className="App">
+            <h1>LookTime</h1>
             <NewTimer />
             <ListTimers />
         </div>
