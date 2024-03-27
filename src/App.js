@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import NewTimer from './components/NewTimer';
-import ListTimers from './components/ListTimers';
+import NewTimer from './components/NewTimer.js';
+import ListTimers from './components/ListTimers.js';
 
 export default function App() {
     return (

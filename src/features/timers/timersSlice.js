@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import makeTimer from './Timer';
+import makeTimer from './Timer.js';
 
 const initialState = {
     value: []

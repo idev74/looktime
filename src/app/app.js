@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import timersReducer, { update } from '../features/timers/timersSlice';
-import { loadState, saveState } from '../utils/persistState';
-import throttle from 'lodash/throttle';
+import timersReducer, { update } from '../features/timers/timersSlice.js';
+import { loadState, saveState } from '../utils/persistState.js';
+import throttle from 'lodash/throttle.js';
 
 export const store = configureStore({
 	reducer: {
